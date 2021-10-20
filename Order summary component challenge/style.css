@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(225, 100%, 94%);
+   font-family: 'Red Hat Display',sans-serif;
+    
+ 
+}
+.wrapper { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.mainPhotoBox {
+    height: 25vh;
+    background-image: url(images/illustration-hero.svg);
+    background-size: cover;
+    
+}
+.title { 
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 20px auto;
+font-weight: 900;
+font-size: 25px;
+}
+.title p {
+    line-height: 1.5;
+}
+
+.annualPlan{
+background-color: hsl(225, 100%, 98%);
+width: 90%;
+margin: 0 auto;
+border-radius: 10px;
+margin-top: 20px;
+}
+h1, h2, p{
+    color: rgb(51, 50, 50);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
