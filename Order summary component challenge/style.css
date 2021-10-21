@@ -1,19 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: hsl(225, 100%, 94%);
-   font-family: 'Red Hat Display',sans-serif;
-    
- 
+    font-family: 'Red Hat Display', sans-serif;
+
 }
-.wrapper { 
+
+p {
+    color: rgb(102, 101, 101);
+}
+
+.wrapper {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 90%;
     height: 80%;
     text-align: center;
@@ -22,38 +27,88 @@ body {
     overflow: hidden;
 
 }
+
 .mainPhotoBox {
     height: 25vh;
     background-image: url(images/illustration-hero.svg);
     background-size: cover;
-    
+
 }
-.title { 
+
+.title {
     width: 90%;
     margin: 0 auto;
 }
 
 h1 {
     margin: 20px auto;
-font-weight: 900;
-font-size: 25px;
+    font-weight: 900;
+    font-size: 25px;
+       color: rgb(27, 39, 80);
 }
+
 .title p {
     line-height: 1.5;
 }
 
-.annualPlan{
-background-color: hsl(225, 100%, 98%);
-width: 90%;
-margin: 0 auto;
-border-radius: 10px;
-margin-top: 20px;
+.annualPlan {
+    background-color: hsl(225, 100%, 98%);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    height: 15%;
 }
-h1, h2, p{
-    color: rgb(51, 50, 50);
+.col1,
+.col2,
+.col2+p {
+    margin: auto;
+}
+.col1 {
+    background-image: url(images/icon-music.svg);
+    width:50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    
+}
+.col2 {
+    width: 50%;
+    padding-right:40px;
+    line-height: 25px;
+    
+}
+.col2 p:nth-child(1){
+        color:hsl(223, 47%, 23%);
+        font-weight: 900;
+}
+.col2 + p {
+    width:25%; 
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    text-decoration: underline;
+    font-size: 14px;
 }
 
-footer{
+.proceed{
+    width: 90%;
+    height: 50px;
+    background-color: rgb(56, 41, 228);
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgb(83, 68, 255);
+    
+  
+
+}
+.proceed p {
+  color:white;
+  line-height:50px;
+  font-weight: bold;
+}
+footer {
     position: absolute;
     bottom: 0;
     left: 0;
