@@ -158,4 +158,13 @@ footer {
         background-size: contain;
         background-position-y: -20%;
     }
+    .proceed {
+        margin-top: 30px;
+    }
+    .cancel {
+        margin-top: 35px;
+    }
+    footer {
+        font-size: 18px;
+    }
 }
