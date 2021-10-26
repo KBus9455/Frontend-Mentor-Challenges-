@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topPanel {
+    position: fixed;
+    background-color: blue;
+    height: 4rem;
+    width: 100vw;
+}
+
+.topPanel,
+.topPanel .menu,
+.topPanel .logo,
+.topPanel .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topPanel .menu {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.topPanel .logo {
+    width: 60%;
+    justify-content: flex-start;
+}
+
+.topPanel .cart {
+    width: 25%;
+    justify-content: flex-start;
+}
+
+.topPanel .cart img {
+    width: 25%;
+}
+
+.topPanel .cart span {
+    width: 20px;
+    display: inline-block;
+}
