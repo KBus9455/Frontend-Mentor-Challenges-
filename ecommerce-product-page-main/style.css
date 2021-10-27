@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Kumbh Sans',
+        sans-serif;
+}
+
+/* TOP PANEL  */
 .topPanel {
     position: fixed;
-    background-color: blue;
-    height: 4rem;
+    top: 0;
+    left: 0;
+    height: 4em;
     width: 100vw;
+    background-color: white;
 }
 
 .topPanel,
@@ -29,7 +37,7 @@
 }
 
 .topPanel .logo {
-    width: 60%;
+    width: 55%;
     justify-content: flex-start;
 }
 
@@ -39,10 +47,136 @@
 }
 
 .topPanel .cart img {
-    width: 25%;
+    width: 1.6em;
 }
 
 .topPanel .cart span {
     width: 20px;
     display: inline-block;
+}
+
+/* MENU */
+
+.menu-mobile {
+    position: fixed;
+    left: -100%;
+}
+
+/* PRODUCT - photo */
+
+.productWrapper {
+    margin-top: 4rem;
+}
+
+.productPhoto {
+    width: 100vw;
+}
+
+.productPhoto img {
+    width: 100%;
+}
+
+/* PRODUCT - description */
+.product-description {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product-description h2 {
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+    line-height: 3em;
+    font-size: 0.8em;
+}
+
+.product-description h1+p {
+    margin: 1em 0;
+    color: gray;
+    line-height: 1.5em;
+}
+
+/* PRODUCT - prices  */
+.pricing {
+    display: flex;
+    align-items: center;
+}
+
+.pricing h1+div {
+    flex-grow: 3;
+    margin-left: 10px;
+
+}
+
+.pricing h1+div p {
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    text-align: center;
+    width: 3em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 10px;
+}
+
+.pricing h1+div+p {
+    color: grey;
+    font-weight: 700;
+    text-decoration: line-through
+}
+
+/* PRODUCT - add to cart  */
+div.counter,
+.addToCart {
+    margin: 1em auto;
+    width: 90vw;
+    height: 4rem;
+    border-radius: 10px;
+    line-height: 4rem;
+}
+
+div.counter {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: hsl(223, 64%, 98%);
+    text-align: center;
+}
+
+.counterNumber {
+    flex-grow: 2;
+}
+
+.counter div {
+    text-align: center;
+    width: 20%
+}
+
+.addToCart {
+    width: 90vw;
+  
+    display: flex;
+    justify-content: center;
+    background-color: hsl(26, 100%, 55%);
+    margin: 1em auto;
+    color: white;
+}
+.addToCart div{
+ background-color: white;
+ -webkit-mask-image: url(images/icon-cart.svg);
+ mask-image: url(icon.svg);
+-webkit-mask-repeat: no-repeat;
+ mask-repeat: url(icon.svg);
+-webkit-mask-position: center;
+mask-position: url(icon.svg);
+width: 3rem;
+height: 4rem;
+
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
