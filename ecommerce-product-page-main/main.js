@@ -17,7 +17,7 @@ console.log('dziala')
 
 // Display cart 
 
-const cart = document.querySelector('div.cart');
+const cart = document.querySelector('div.cart img');
 const displayCart = document.querySelector('div.displayCart');
 
 cart.addEventListener('click', function(){

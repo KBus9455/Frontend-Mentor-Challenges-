@@ -47,10 +47,11 @@ h1{
 .topPanel .cart {
     width: 25%;
     justify-content: flex-start;
+    cursor: pointer;
 }
 
 .topPanel .cart img {
-    width: 1.6em;
+    width: 1.5em;
 }
 
 .topPanel .cart span {
@@ -107,12 +108,30 @@ font-size: 1.2rem;
 
 .productPhoto {
     width: 100vw;
+        position: relative;
 }
 
 .productPhoto img {
     width: 100%;
-    height: 20rem;
 }
+.productPhoto img.arrow {
+    position: absolute;
+    z-index: 20;
+    width: 0.7em;
+    height: 0.8em;
+border: solid white 1em;
+box-sizing: content-box;
+    background-color: white;
+    top: 50%;
+    transform:translateY(-50%);
+    left: 0.8em;
+border-radius: 50%;
+}
+.productPhoto img.arrow ~img{
+    left: inherit;
+   right: 0.8em;
+
+} 
 
 /* PRODUCT - description */
 .product-description {
